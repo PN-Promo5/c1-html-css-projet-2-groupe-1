@@ -1,0 +1,69 @@
+/* ALL */
+@font-face {
+  font-family: 'Courier New';
+  src: url('../font/cour.ttf');
+}
+
+body, .card, .form-control, .form-control:focus, .form-group button, .form-group button:hover, .form-group button:active {
+  background-color: black;
+  color: #707070;
+  font-family: 'Courier New';
+}
+
+main {
+  height: 100vh;
+}
+
+a, a:hover, .btn-link, .btn-link:hover {
+  color: #707070;
+}
+
+a:hover, .btn-link:hover, .btn-link:focus {
+  text-decoration: none;
+}
+
+.infos-link, .material-icons {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.btn {
+  vertical-align: inherit;
+}
+
+div .card-header {
+  height: 40px;
+}
+
+/* INDEX */
+#index-title {
+  font-size: 100px;
+}
+
+/* DAYS */
+#day-title {
+  line-height: 0.9;
+  font-size: 2.3rem;
+}
+
+/* INFOS */
+.form-control, .form-control:focus, .form-group button, .form-group button:hover, .form-group button:active {
+  border: 1px solid #707070;
+}
+
+.form-control:focus, .form-group button:focus {
+  box-shadow: none;
+}
+
+#access-card {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+#access-card iframe {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  border: 0;
+  width: 100%;
+  height: 300px;
+}
