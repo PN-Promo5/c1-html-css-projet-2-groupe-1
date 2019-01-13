@@ -28,7 +28,7 @@ body {
 iframe {
   -webkit-filter: hue-rotate(1);
   filter: hue-rotate(1);
-   width: 100%;
+  width: 100%;
 }
 
 h2 {
@@ -67,6 +67,10 @@ h6 {
   letter-spacing: 0.6px
 }
 
+#date {
+  font-size: 1.7rem;
+}
+
 a#accueil, a#infos, a#prog {
   margin-left: 10px;
   font-size: 2rem;
@@ -90,7 +94,6 @@ button.btn.btn-warning.btn-lg.btn-block {
   letter-spacing: 3px;
   border-radius: 0.5px;
 }
-
 /* Button collapse pragrammation */
 button.btn.btn-link,
 button.btn.btn-link.collapsed {
@@ -156,6 +159,10 @@ p {
   transition-duration: 0.4s;
 }
 
+svg {
+  width: 100%;
+}
+
 .card-body {
   color: orange;
 }
@@ -181,13 +188,19 @@ p.h4.text-center {
   letter-spacing: 1px;
 }
 
+/* Partenaires icons */
+img.img-fluid.m-3 {
+  border: 2px solid blue;
+}
+
 /* Newsletter footer */
-input#staticEmail2, input#staticEmail1{
+input#staticEmail2, input#staticEmail1 {
   color: #fe9800;
   border: 1px solid yellow;
 }
+
 input#staticEmail1 {
-    margin: 20px;
+  margin: 20px;
 }
 
 ::placeholder {
