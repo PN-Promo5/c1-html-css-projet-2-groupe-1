@@ -1,0 +1,67 @@
+@media (max-width: 576px) {
+  .future {
+    font-size: 20px;
+  }
+
+  #planet {
+    margin-top: 30px;
+  }
+
+  html, body {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .planete-desktop {
+    display: none;
+  }
+
+  .planete-mobile {
+    display: flex;
+  }
+
+  .future {
+    font-size: 20px;
+  }
+
+  .programme {
+    border: #FFBC00 solid 5px;
+  }
+
+  #planet {
+    margin-top: 30px;
+  }
+
+  html, body {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .future {
+    font-size: 30px;
+  }
+
+  #planet {
+    margin-top: 30px;
+  }
+
+  html, body {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .future {
+    font-size: 30px;
+  }
+
+  #planet {
+    margin-top: 30px;
+  }
+
+  html, body {
+    overflow: auto;
+  }
+}

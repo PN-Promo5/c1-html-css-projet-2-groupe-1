@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'back_to_the_future';
+  src: url('../font/back_to_the_future.ttf') format('truetype');
+}
+
+.future {
+  font-family: 'back_to_the_future';
+  font-size: 50px;
+  color: #FFBC00;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: #FFBC00 !important;
+}
+
+a:hover {
+  color: #FFBC00;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  min-width: 35px;
+}
+
+h1 {
+  font-family: 'back_to_the_future';
+  font-weight: 700;
+  color: #FFBC00;
+  font-size: 50px;
+}
+
+#canvas {
+  background: #111;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.col-1 {
+  transform-style: preserve-3d;
+  width: 100%
+}
+
+.sun {
+  animation-name: float;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.mercury, .earth {
+  animation-name: float;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.venus, .mars {
+  animation-name: float;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.moon {
+  animation-name: float;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.jupiter, .uranus {
+  animation-name: float;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.saturn, .neptune {
+  animation-name: float;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+#planet {
+  margin-top: 100px;
+  position: relative;
+}
+
+#sun {
+  transform: translate3d(-100px, -130px, 0) scale(1.5);
+  position: absolute;
+  left: -50px;
+  top: 20px;
+}
+
+#festival {
+  font-family: 'back_to_the_future';
+  top: 140px;
+  position: absolute;
+  z-index: 9999999;
+  font-size: 40px;
+  color: #FFBC00;
+  text-shadow: 5px 5px 5px black;
+  margin-left: 10px;
+  position: fixed;
+}
+
+#networks {
+  position: absolute;
+  bottom: 25px;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-24px);
+  }
+}
+
+.planete-desktop {
+  display: flex;
+}
+
+.planete-mobile {
+  display: none;
+}
+
+#sun:active {
+  transform: scale(2);
+}
+
+.mercury:active, .venus:active, .moon:active, .earth:active, .mars:active, .jupiter:active, .saturn:active, .neptune:active, .uranus:active {
+  transform: scale(2);
+}
